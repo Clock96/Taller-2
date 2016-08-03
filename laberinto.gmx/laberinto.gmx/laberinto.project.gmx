@@ -28,6 +28,8 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
+    <background>background\background1</background>
+    <background>background\final</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -46,12 +48,14 @@
     <object>objects\objLlave</object>
     <object>objects\objPuerta</object>
     <object>objects\objInicio</object>
+    <object>objects\objfinal</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Inicio</room>
     <room>rooms\Level_1</room>
     <room>rooms\Level_2</room>
     <room>rooms\Level_3</room>
+    <room>rooms\game_over</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
