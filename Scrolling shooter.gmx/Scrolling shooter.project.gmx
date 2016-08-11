@@ -48,7 +48,9 @@
     <object>objects\obj_EnemyBullet1</object>
     <object>objects\obj_EnemyBullet2</object>
     <object>objects\obj_Controller_Life</object>
-    <object>objects\obj_Controller_Enemy</object>
+    <objects name="controller_enemy">
+      <object>objects\obj_Controller_Enemy</object>
+    </objects>
     <object>objects\objFinal</object>
     <object>objects\objinicio</object>
   </objects>

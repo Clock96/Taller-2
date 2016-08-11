@@ -28,10 +28,13 @@
             <string>/// Crear enemigos
 instance_create(random(room_width),-20, objEnemy1);
 instance_create(random(room_width),-100, objEnemy1);
+
 instance_create(random(room_width),-20, objEnemy2);
 instance_create(random(room_width),-100, objEnemy2);
+
 instance_create(random(room_width),-20, objEnemy3);
 instance_create(random(room_width),-100, objEnemy3);
+
 instance_create(random(room_width),-20, objEnemy4);
 instance_create(random(room_width),-100, objEnemy4);
 
@@ -64,8 +67,8 @@ alarm[3] = 3000;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(irandom_range(enemy1_width/2, room_width - enemy1_width/2),room_height + enemy4, objEnemy4);
-alarm[2] = 3000;
+            <string>instance_create(random(room_width), -20, objEnemy4);
+alarm[0] = 500;
 </string>
           </argument>
         </arguments>
@@ -88,8 +91,8 @@ alarm[2] = 3000;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(irandom_range(enemy1_width/2, room_width - enemy1_width/2),-enemy1_height/2, objEnemy3);
-alarm[2] = 2000;
+            <string>instance_create(random(room_width), -20, objEnemy3);
+alarm[0] = 500;
 </string>
           </argument>
         </arguments>
@@ -113,8 +116,8 @@ alarm[2] = 2000;
           <argument>
             <kind>1</kind>
             <string>/// controlador de enemigos
-instance_create(irandom_range(enemy1_width/2, room_width - enemy1_width/2),-enemy1_height/2, objEnemy2);
-alarm[1] = 1000;
+instance_create(random(room_width), -20, objEnemy2);
+alarm[0] = 500;
 </string>
           </argument>
         </arguments>
@@ -138,8 +141,8 @@ alarm[1] = 1000;
           <argument>
             <kind>1</kind>
             <string>/// crear un enemigo nuevo
-instance_create(irandom_range(enemy1_width/2, room_width - enemy1_width/2),-enemy1_height/2, objEnemy1);
-alarm[0] = 200;
+instance_create(random(room_width), -20, objEnemy1);
+alarm[0] = 500;
 </string>
           </argument>
         </arguments>
