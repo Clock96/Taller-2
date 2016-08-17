@@ -25,6 +25,8 @@
     <sprite>sprites\spr_life</sprite>
     <sprite>sprites\spr_EnemyBullet1</sprite>
     <sprite>sprites\spr_EnemyBullet2</sprite>
+    <sprite>sprites\spr_powerup</sprite>
+    <sprite>sprites\sprEnemy5</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\back_water</background>
@@ -43,6 +45,7 @@
     <object>objects\objEnemy3</object>
     <object>objects\objEnemy4</object>
     <object>objects\obj_Bullet</object>
+    <object>objects\objEnemy5</object>
     <object>objects\obj_ExploEnemy</object>
     <object>objects\obj_ExploAvion</object>
     <object>objects\obj_EnemyBullet1</object>
@@ -53,6 +56,7 @@
     </objects>
     <object>objects\objFinal</object>
     <object>objects\objinicio</object>
+    <object>objects\obj_powerup</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Inicio</room>

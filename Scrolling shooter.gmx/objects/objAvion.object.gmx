@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>vspeed= -2;
 can_shoot = 1;
+arma1 = 1;
 </string>
           </argument>
         </arguments>
@@ -141,16 +142,49 @@ if(down){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Disparar
+            <string>/// Disparos Jugador
 
 fire = keyboard_check(vk_space);
+
 if(fire){
-   if(can_shoot){
-      instance_create(x,y - 16, obj_Bullet);
-      can_shoot = 0;
-      alarm[0] = 15;
-  }
-}      
+if(can_shoot){
+instance_create(x, y - 16, obj_Bullet);
+can_shoot = 0;
+alarm[0] = 15;
+if (arma1) { // disparos multiples - arma 1
+bala2 =instance_create(x, y, obj_Bullet);
+bala2.direction = 60;
+bala3 = instance_create(x, y, obj_Bullet);
+bala3.direction = 120;
+}
+}
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_powerup">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>arma1 = 1;
+with(other){
+instance_destroy();
+}
 </string>
           </argument>
         </arguments>
