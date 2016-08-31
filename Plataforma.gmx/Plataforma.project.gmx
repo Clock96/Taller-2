@@ -9,10 +9,12 @@
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_Muro</sprite>
+    <sprite>sprites\spr_Muro_2</sprite>
     <sprite>sprites\spr_save</sprite>
-    <sprite>sprites\spr_personaje</sprite>
     <sprite>sprites\spr_personaje2</sprite>
     <sprite>sprites\spr_enemigo</sprite>
+    <sprite>sprites\spr_enemigo2</sprite>
+    <sprite>sprites\spr_enemigo3</sprite>
     <sprite>sprites\spr_nivel</sprite>
     <sprite>sprites\spr_powerup</sprite>
     <sprite>sprites\spr_plataforma</sprite>
@@ -21,11 +23,32 @@
     <sprite>sprites\spr_final</sprite>
     <sprite>sprites\spr_llave</sprite>
     <sprite>sprites\spr_candado</sprite>
+    <sprite>sprites\spr_powerupV</sprite>
+    <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_bullet2</sprite>
+    <sprite>sprites\spr_powerupB</sprite>
+    <sprites name="personaje">
+      <sprite>sprites\spr_personaje3</sprite>
+      <sprite>sprites\spr_personaje</sprite>
+    </sprites>
+    <sprite>sprites\spr_spike</sprite>
+    <sprite>sprites\spr_spike2</sprite>
+    <sprite>sprites\spr_spike3</sprite>
+    <sprite>sprites\spr_spike4</sprite>
+    <sprite>sprites\spr_bonus</sprite>
+    <sprite>sprites\spr_flecha</sprite>
+    <sprite>sprites\spr_moneda</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_1</background>
     <background>background\background_inicial</background>
     <background>background\background2</background>
+    <background>background\backgroundTotal</background>
+    <background>background\Afterlife</background>
+    <background>background\piano</background>
+    <background>background\Violin</background>
+    <background>background\Final_boss0</background>
+    <background>background\instrucciones</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -36,22 +59,44 @@
     <object>objects\obj_personaje</object>
     <object>objects\obj_save</object>
     <object>objects\obj_enemigo</object>
+    <object>objects\obj_enemigo2</object>
     <object>objects\obj_nivel</object>
     <object>objects\obj_powerup</object>
     <object>objects\obj_plataforma</object>
     <object>objects\obj_plataformaM</object>
     <object>objects\obj_next</object>
+    <object>objects\obj_next2</object>
+    <object>objects\obj_next3</object>
+    <object>objects\obj_controllerlife</object>
     <object>objects\obj_final</object>
     <object>objects\obj_inicio</object>
     <object>objects\obj_end</object>
     <object>objects\obj_candado</object>
     <object>objects\obj_llave</object>
+    <object>objects\obj_powerupV</object>
+    <object>objects\obj_bullet</object>
+    <object>objects\obj_powerupB</object>
+    <object>objects\obj_Bonus</object>
+    <object>objects\obj_Muro2</object>
+    <object>objects\obj_Bullet2</object>
+    <objects name="Spikes">
+      <object>objects\obj_spike</object>
+      <object>objects\obj_spike3</object>
+      <object>objects\obj_spike4</object>
+      <object>objects\obj_spike2</object>
+    </objects>
+    <object>objects\obj_flecha</object>
+    <object>objects\obj_moneda</object>
+    <object>objects\obj_Enemigo_3</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\inicio</room>
-    <room>rooms\Level_1</room>
-    <room>rooms\level_2</room>
-    <room>rooms\level_3</room>
+    <room>rooms\Instruccions</room>
+    <room>rooms\Level1</room>
+    <room>rooms\Level2</room>
+    <room>rooms\Bonus</room>
+    <room>rooms\Level_3</room>
+    <room>rooms\Final_boss</room>
     <room>rooms\final</room>
   </rooms>
   <help>
